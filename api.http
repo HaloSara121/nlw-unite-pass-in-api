@@ -1,0 +1,30 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+  "title": "New event",
+  "details": null,
+  "maximumAttendees": 1
+}
+
+###
+POST http://localhost:3333/events/75fb7b01-68ec-4746-affd-bb4f8a48f84a/attendees
+Content-Type: application/json
+
+{
+  "name": "Vinicius Paes Berna",
+  "email": "vini_berna2.0@hotmail.com"
+}
+
+###
+GET http://localhost:3333/events/75fb7b01-68ec-4746-affd-bb4f8a48f84a
+
+###
+GET http://localhost:3333/attendees/5/badge
+
+###
+GET http://localhost:3333/attendees/5/check-in
+
+###
+GET http://localhost:3333/events/75fb7b01-68ec-4746-affd-bb4f8a48f84a/attendees
+
